@@ -1,0 +1,53 @@
+/* header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #f3e5ab, #e4c573);
+    color: #3b3b3b;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+    border-radius: 10px;
+}
+
+.headerlogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerlogo img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.headerlogo img:hover {
+    transform: scale(1.1);
+}
+
+.headerlogo h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3b3b3b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tengah {
+    font-size: 1.8em;
+    color: #5a5a5a;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.2px;
+}
+
+/* Add subtle animations */
+.header, .headerlogo img, .tengah {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

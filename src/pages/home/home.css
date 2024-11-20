@@ -1,0 +1,40 @@
+/* home.css */
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #e4c573; /* Luxurious, rich gold background */
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 85vw; /* Slightly smaller than full width for a centered look */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.huruf h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    color: #3b3b3b; /* Dark, contrasting color for text */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for the map */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
